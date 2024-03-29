@@ -17,7 +17,7 @@ variable AMIS {
 	}
 }
 
-variable PRIV_KEY_PATH {
+variable "PRIV_KEY_PATH" {
     default = "vprofilekey"
 }
 

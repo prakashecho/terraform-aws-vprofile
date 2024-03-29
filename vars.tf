@@ -18,11 +18,11 @@ variable AMIS {
 }
 
 variable PRIV_KEY_PATH {
-    default = "vprofile"
+    default = "vprofilekey"
 }
 
 variable "PUB_KEY_PATH" {
-    default="vprofile.pub"
+    default="vprofilekey.pub"
       
 }
 
@@ -33,7 +33,7 @@ variable "USERNAME" {
 
 variable "MYIP" {
 
-    default = "" #UPDATE THIS
+    default = "49.37.156.7/32" #UPDATE THIS
   
 }
 
@@ -46,7 +46,7 @@ variable rmqPASS {
     default = "password" #UPDATE THIS
       
 }
-variable  dbname {
+variable  dbuser {
     default = "admin"
   
 }

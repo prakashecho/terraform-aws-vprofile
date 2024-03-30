@@ -43,7 +43,7 @@ variable rmquser {
 }
 
 variable rmqPASS {
-    default = "password" #UPDATE THIS
+    default = "password123456" #UPDATE THIS
       
 }
 variable  dbuser {

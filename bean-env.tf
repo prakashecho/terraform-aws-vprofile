@@ -5,7 +5,7 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
     setting {
       name = "VPCid"
       namespace = "aws:ec2:vpc"
-      value = module.vpc_id
+      value = module.vpc.vpc_id
     }
 
     setting {

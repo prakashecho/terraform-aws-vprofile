@@ -6,7 +6,7 @@ resource "aws_security_group" "vprofile-bean-elb-sg" {
     egress {
         from_port = 0
         protocol = "-1"
-        tp_port = 0
+        to_port = 0
         cidr_blocks = ["0.0.0.0/0"]
     }
   
@@ -26,7 +26,7 @@ resource "aws_security_group" "vprofile-bastion-sg" {
      egress  {
         from_port = 0
         protocol = "-1"
-        tp_port = 0
+        to_port = 0
         cidr_blocks = ["0.0.0.0/0"]
     }
   

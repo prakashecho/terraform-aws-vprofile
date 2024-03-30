@@ -47,7 +47,7 @@ resource "aws_security_group" "vprofile-prod-sg" {
      egress  {
         from_port = 0
         protocol = "-1"
-        tp_port = 0
+        to_port = 0
         cidr_blocks = ["0.0.0.0/0"]
     }
   
@@ -68,7 +68,7 @@ resource "aws_security_group" "vprofile-backend-sg" {
      egress  {
         from_port = 0
         protocol = "-1"
-        tp_port = 0
+        to_port = 0
         cidr_blocks = ["0.0.0.0/0"]
     }
   

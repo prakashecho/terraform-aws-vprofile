@@ -9,7 +9,7 @@ resource "aws_security_group" "vprofile-bean-elb-sg" {
         to_port = 0
         cidr_blocks = ["0.0.0.0/0"]
     }
-  
+  #nuew sdf 
     ingress {
         from_port = 80
         protocol = "tcp"

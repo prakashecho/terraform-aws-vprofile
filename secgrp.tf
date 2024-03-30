@@ -3,7 +3,7 @@ resource "aws_security_group" "vprofile-bean-elb-sg" {
     description = "Security group of bean elb"
     vpc_id = module.vpc.vpc_id
 
-    egress = {
+    egress {
         from_port = 0
         protocol = "-1"
         tp_port = 0
@@ -21,9 +21,9 @@ resource "aws_security_group" "vprofile-bean-elb-sg" {
 resource "aws_security_group" "vprofile-bastion-sg" {
     name = "vprofile-bastion-sg"
     description = "Security group for bastionisioner ec2 instance"
-    vpc_id = module.vpc.vpc.vpc_id
+    vpc_id = module.vpc.vpc_id
 
-     egress = {
+     egress  {
         from_port = 0
         protocol = "-1"
         tp_port = 0
@@ -44,7 +44,7 @@ resource "aws_security_group" "vprofile-prod-sg" {
     description = "Security group for beanstalk ec2 instance"
     vpc_id = module.vpc.vpc_id
 
-     egress = {
+     egress  {
         from_port = 0
         protocol = "-1"
         tp_port = 0
@@ -65,7 +65,7 @@ resource "aws_security_group" "vprofile-backend-sg" {
     description = "Security group for RDS,ACTIVE MQ,ELASTc cache"
     vpc_id = module.vpc.vpc_id
 
-     egress = {
+     egress  {
         from_port = 0
         protocol = "-1"
         tp_port = 0

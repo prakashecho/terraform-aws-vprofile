@@ -87,7 +87,7 @@ resource "aws_security_group" "vprofile-backend-sg" {
     }
 }
   
-}
+
 
 
 resource "aws_security_group_rule" "sec_group_allow_itself" {

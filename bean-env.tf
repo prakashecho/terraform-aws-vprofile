@@ -135,5 +135,5 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
 }
 
 
-}    
+
 

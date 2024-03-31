@@ -20,12 +20,12 @@ resource "aws_db_instance" "vprofile-rds" {
     allocated_storage = 20
     storage_type = "gp2"
     engine = "mysql"
-    engine_version = "5.7.44"
+    engine_version = "8.0"
     instance_class = "db.t2.xlarge"
     identifier = var.dbname
     username = var.dbuser
     password = var.dbpass
-    parameter_group_name = "default.mysql5.7.44"
+    parameter_group_name = "default.mysql8.0"
     multi_az = "false"
     publicly_accessible = "false"
     skip_final_snapshot = true

@@ -33,7 +33,7 @@ variable "USERNAME" {
 
 variable "MYIP" {
 
-    default = "49.37.156.7/32" #UPDATE THIS
+    default = "49.37.156.183/32" #UPDATE THIS
   
 }
 

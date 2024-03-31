@@ -35,7 +35,6 @@ resource "aws_db_instance" "vprofile-rds" {
 }
 
 
-Instance class	Db2	MariaDB	Microsoft SQL Server	MySQL	Oracle	PostgreSQL
 
 resource "aws_elasticache_cluster" "vprofile-cache" {
     cluster_id = "vprofile-cache"

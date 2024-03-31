@@ -21,11 +21,11 @@ resource "aws_db_instance" "vprofile-rds" {
     storage_type = "gp2"
     engine = "mysql"
     engine_version = "5.7.44"
-    instance_class = "db.t2.micro"
+    instance_class = "db.t2.xlarge"
     identifier = var.dbname
     username = var.dbuser
     password = var.dbpass
-    parameter_group_name = "default.mysql5.6"
+    parameter_group_name = "default.mysql5.7.44"
     multi_az = "false"
     publicly_accessible = "false"
     skip_final_snapshot = true
@@ -33,6 +33,9 @@ resource "aws_db_instance" "vprofile-rds" {
     vpc_security_group_ids = [aws_security_group.vprofile-backend-sg.id]
   
 }
+
+
+Instance class	Db2	MariaDB	Microsoft SQL Server	MySQL	Oracle	PostgreSQL
 
 resource "aws_elasticache_cluster" "vprofile-cache" {
     cluster_id = "vprofile-cache"

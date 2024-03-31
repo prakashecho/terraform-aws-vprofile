@@ -21,7 +21,7 @@ resource "aws_db_instance" "vprofile-rds" {
     storage_type = "gp2"
     engine = "mysql"
     engine_version = "8.0"
-    instance_class = "db.t2.xlarge"
+    instance_class = "db.t3.medium"
     identifier = var.dbname
     username = var.dbuser
     password = var.dbpass

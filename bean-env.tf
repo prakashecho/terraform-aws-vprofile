@@ -86,7 +86,7 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
 
     setting {
       namespace = "aws:autoscaling:updatepolicy:rollingupdate"
-      name      = "MaBatchSize"
+      name      = "MaxBatchSize"
       value     = "1"
     }
     setting {
